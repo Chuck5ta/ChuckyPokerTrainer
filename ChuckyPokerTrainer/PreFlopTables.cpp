@@ -18,7 +18,7 @@ void PreFlopTables::populateTables()
 	pTable->populateTable("99-77", "KJs", "QJs", "AJ", "KQ","UNRAISED POT","Early Position", "Call");
 	tables[1] = *pTable;
 
-	pTable->populateTable("AA-99", "AKs-ATs", "KQs-KJs", "AK-KJ", "KQ","UNRAISED POT","Middle Position", "Raise");
+	pTable->populateTable("AA-99", "AKs-ATs", "KQs-KJs", "AK-AJ", "KQ","UNRAISED POT","Middle Position", "Raise");
 	tables[2] = *pTable;
 
 	pTable->populateTable("88-22", "A9s-A7s", "KTs", "QJs-QTs", "JTs", "AT", "KJ","UNRAISED POT","Middle Position", "Call");
