@@ -153,6 +153,12 @@ private: System::Windows::Forms::Panel^  panel1;
 		{
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPreFlopTables = (gcnew System::Windows::Forms::TabPage());
+			this->panel7 = (gcnew System::Windows::Forms::Panel());
+			this->panel6 = (gcnew System::Windows::Forms::Panel());
+			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->panel4 = (gcnew System::Windows::Forms::Panel());
+			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label25 = (gcnew System::Windows::Forms::Label());
 			this->txtRPBigBlindCALL = (gcnew System::Windows::Forms::TextBox());
@@ -215,12 +221,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->lblTitle = (gcnew System::Windows::Forms::Label());
 			this->btnExit = (gcnew System::Windows::Forms::Button());
 			this->label28 = (gcnew System::Windows::Forms::Label());
-			this->panel2 = (gcnew System::Windows::Forms::Panel());
-			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->panel4 = (gcnew System::Windows::Forms::Panel());
-			this->panel5 = (gcnew System::Windows::Forms::Panel());
-			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->panel7 = (gcnew System::Windows::Forms::Panel());
 			this->tabControl1->SuspendLayout();
 			this->tabPreFlopTables->SuspendLayout();
 			this->tabPreFlopTableTest->SuspendLayout();
@@ -238,6 +238,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(1054, 491);
 			this->tabControl1->TabIndex = 0;
+			this->tabControl1->Selected += gcnew System::Windows::Forms::TabControlEventHandler(this, &ChuckyPokerTrainerGUI::tabControl1_Selected);
 			// 
 			// tabPreFlopTables
 			// 
@@ -292,6 +293,66 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopTables->TabIndex = 1;
 			this->tabPreFlopTables->Text = L"PreFlop Tables";
 			this->tabPreFlopTables->UseVisualStyleBackColor = true;
+			// 
+			// panel7
+			// 
+			this->panel7->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel7->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel7->Location = System::Drawing::Point(910, 56);
+			this->panel7->Name = L"panel7";
+			this->panel7->Size = System::Drawing::Size(3, 400);
+			this->panel7->TabIndex = 43;
+			// 
+			// panel6
+			// 
+			this->panel6->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel6->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel6->Location = System::Drawing::Point(789, 56);
+			this->panel6->Name = L"panel6";
+			this->panel6->Size = System::Drawing::Size(3, 400);
+			this->panel6->TabIndex = 42;
+			// 
+			// panel5
+			// 
+			this->panel5->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel5->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel5->Location = System::Drawing::Point(502, 56);
+			this->panel5->Name = L"panel5";
+			this->panel5->Size = System::Drawing::Size(3, 400);
+			this->panel5->TabIndex = 41;
+			// 
+			// panel4
+			// 
+			this->panel4->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel4->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel4->Location = System::Drawing::Point(380, 56);
+			this->panel4->Name = L"panel4";
+			this->panel4->Size = System::Drawing::Size(3, 400);
+			this->panel4->TabIndex = 40;
+			// 
+			// panel3
+			// 
+			this->panel3->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel3->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel3->Location = System::Drawing::Point(259, 56);
+			this->panel3->Name = L"panel3";
+			this->panel3->Size = System::Drawing::Size(3, 400);
+			this->panel3->TabIndex = 39;
+			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel2->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel2->Location = System::Drawing::Point(136, 56);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(3, 400);
+			this->panel2->TabIndex = 38;
 			// 
 			// panel1
 			// 
@@ -944,7 +1005,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->lblTitle->AutoSize = true;
 			this->lblTitle->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblTitle->Location = System::Drawing::Point(293, 16);
+			this->lblTitle->Location = System::Drawing::Point(419, 16);
 			this->lblTitle->Name = L"lblTitle";
 			this->lblTitle->Size = System::Drawing::Size(300, 38);
 			this->lblTitle->TabIndex = 1;
@@ -970,66 +1031,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label28->Size = System::Drawing::Size(46, 16);
 			this->label28->TabIndex = 3;
 			this->label28->Text = L"ChuckE";
-			// 
-			// panel2
-			// 
-			this->panel2->BackColor = System::Drawing::Color::Gainsboro;
-			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel2->ForeColor = System::Drawing::SystemColors::ButtonShadow;
-			this->panel2->Location = System::Drawing::Point(136, 56);
-			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(3, 400);
-			this->panel2->TabIndex = 38;
-			// 
-			// panel3
-			// 
-			this->panel3->BackColor = System::Drawing::Color::Gainsboro;
-			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel3->ForeColor = System::Drawing::SystemColors::ButtonShadow;
-			this->panel3->Location = System::Drawing::Point(259, 56);
-			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(3, 400);
-			this->panel3->TabIndex = 39;
-			// 
-			// panel4
-			// 
-			this->panel4->BackColor = System::Drawing::Color::Gainsboro;
-			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel4->ForeColor = System::Drawing::SystemColors::ButtonShadow;
-			this->panel4->Location = System::Drawing::Point(380, 56);
-			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(3, 400);
-			this->panel4->TabIndex = 40;
-			// 
-			// panel5
-			// 
-			this->panel5->BackColor = System::Drawing::Color::Gainsboro;
-			this->panel5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel5->ForeColor = System::Drawing::SystemColors::ButtonShadow;
-			this->panel5->Location = System::Drawing::Point(502, 56);
-			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(3, 400);
-			this->panel5->TabIndex = 41;
-			// 
-			// panel6
-			// 
-			this->panel6->BackColor = System::Drawing::Color::Gainsboro;
-			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel6->ForeColor = System::Drawing::SystemColors::ButtonShadow;
-			this->panel6->Location = System::Drawing::Point(789, 56);
-			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(3, 400);
-			this->panel6->TabIndex = 42;
-			// 
-			// panel7
-			// 
-			this->panel7->BackColor = System::Drawing::Color::Gainsboro;
-			this->panel7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel7->ForeColor = System::Drawing::SystemColors::ButtonShadow;
-			this->panel7->Location = System::Drawing::Point(910, 56);
-			this->panel7->Name = L"panel7";
-			this->panel7->Size = System::Drawing::Size(3, 400);
-			this->panel7->TabIndex = 43;
 			// 
 			// ChuckyPokerTrainerGUI
 			// 
@@ -1161,13 +1162,40 @@ private: System::Void textCorrectPlayAnswer_KeyDown(System::Object^  sender, Sys
 		 }
 
 		 // PreFlop Correct Play Next Text button
-private: System::Void btnCorrectPlayNextTest_Click(System::Object^  sender, System::EventArgs^  e) 
-		 {
-			 initialisePreFlopCorrectPlayTest();
-		 }
+		private: System::Void btnCorrectPlayNextTest_Click(System::Object^  sender, System::EventArgs^  e) 
+		{
+			initialisePreFlopCorrectPlayTest();
+		}
 
-private: System::Void ChuckyPokerTrainerGUI_Load(System::Object^  sender, System::EventArgs^  e) {
-}
+		private: System::Void ChuckyPokerTrainerGUI_Load(System::Object^  sender, System::EventArgs^  e) 
+		{
+		}
+
+		private: System::Void tabControl1_Selected(System::Object^  sender, System::Windows::Forms::TabControlEventArgs^  e)
+		{
+			if (tabControl1->SelectedTab == tabPreFlopTables)
+			{
+				// change the GUI's width
+				this->Width = 1158;
+				tabControl1->Width = 1054;
+
+				// change location of the main title and the exit button
+				lblTitle->Location = Point(419, 16);
+				btnExit->Location = Point(530, 566);
+			}
+			else
+			{
+				// change the GUI's width
+				this->Width = 864;
+				tabControl1->Width = 735;
+
+				// change location of the main title and the exit button
+				lblTitle->Location = Point(264, 16);
+				btnExit->Location = Point(371, 566);
+			}
+		}
+
 };
+
 }
 
