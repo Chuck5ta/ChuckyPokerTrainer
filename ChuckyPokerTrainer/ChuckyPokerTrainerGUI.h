@@ -375,7 +375,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label18->AutoSize = true;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label18->Location = System::Drawing::Point(276, 157);
+			this->label18->Location = System::Drawing::Point(276, 172);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(34, 16);
 			this->label18->TabIndex = 28;
@@ -384,7 +384,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPLateCALL
 			// 
 			this->txtUPLateCALL->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPLateCALL->Location = System::Drawing::Point(272, 175);
+			this->txtUPLateCALL->Location = System::Drawing::Point(272, 190);
 			this->txtUPLateCALL->Multiline = true;
 			this->txtUPLateCALL->Name = L"txtUPLateCALL";
 			this->txtUPLateCALL->Size = System::Drawing::Size(100, 62);
@@ -633,7 +633,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPLateRAISE->Location = System::Drawing::Point(272, 76);
 			this->txtUPLateRAISE->Multiline = true;
 			this->txtUPLateRAISE->Name = L"txtUPLateRAISE";
-			this->txtUPLateRAISE->Size = System::Drawing::Size(100, 72);
+			this->txtUPLateRAISE->Size = System::Drawing::Size(100, 88);
 			this->txtUPLateRAISE->TabIndex = 4;
 			this->txtUPLateRAISE->Text = L"AA-88\r\nAKs-A8s\r\nKQs-KTs\r\nQJs\r\nAK-AT\r\nKQ-KJ\r\n";
 			// 
