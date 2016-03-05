@@ -44,14 +44,14 @@ void PreFlopTables::populateTables()
 	// RAISED POTS
 	// -----------	
 
-	pTable->populateTable("AA-TT", "AKs-AJs", "KQs", "AK", "RAISED POT","Not Blig Blind Position", "Raise");
+	pTable->populateTable("AA-TT", "AKs-AJs", "KQs", "AK", "RAISED POT","Not Big Blind Position", "Raise");
 	tables[9] = *pTable;
 
-	pTable->populateTable("AA-JJ", "AKs-AQs", "AK", "RAISED POT","Blig Blind Position", "Raise");
+	pTable->populateTable("AA-JJ", "AKs-AQs", "AK", "RAISED POT","Big Blind Position", "Raise");
 	tables[10] = *pTable;
 
-	pTable->populateTable("TT-22", "AJs-A2s", "KQs-K9s", "QJs-Q9s",  "AK", "JTs-87s", "J9s-T8s", "AQ",
-		"RAISED POT","Blig Blind Position", "Call");
+	pTable->populateTable("TT-22", "AJs-A2s", "KQs-K9s", "QJs-Q9s", "JTs-87s", "J9s-T8s", "AQ",
+		"RAISED POT","Big Blind Position", "Call");
 	tables[11] = *pTable;
 
 	pTable->populateTable("AA-QQ", "AKs", "RERAISED POT", "Any Position", "Reraise");
