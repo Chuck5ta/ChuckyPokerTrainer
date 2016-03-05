@@ -387,9 +387,9 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPLateCALL->Location = System::Drawing::Point(272, 190);
 			this->txtUPLateCALL->Multiline = true;
 			this->txtUPLateCALL->Name = L"txtUPLateCALL";
-			this->txtUPLateCALL->Size = System::Drawing::Size(100, 62);
+			this->txtUPLateCALL->Size = System::Drawing::Size(100, 92);
 			this->txtUPLateCALL->TabIndex = 27;
-			this->txtUPLateCALL->Text = L"77-22, A7s-A2s,\r\nK9s, QTs-Q9s,\r\nJTs-87s, J9s-T8s \r\n";
+			this->txtUPLateCALL->Text = L"77-22 \r\nA7s-A2s\r\nK9s \r\nQTs-Q9s\r\nJTs-87s \r\nJ9s-T8s \r\n";
 			// 
 			// label17
 			// 
@@ -431,9 +431,9 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPMiddleCALL->Location = System::Drawing::Point(149, 175);
 			this->txtUPMiddleCALL->Multiline = true;
 			this->txtUPMiddleCALL->Name = L"txtUPMiddleCALL";
-			this->txtUPMiddleCALL->Size = System::Drawing::Size(100, 62);
+			this->txtUPMiddleCALL->Size = System::Drawing::Size(100, 97);
 			this->txtUPMiddleCALL->TabIndex = 23;
-			this->txtUPMiddleCALL->Text = L"88-22, A9s-A7s,\r\nKTs, QJs-QTs,\r\nJTs, \r\nAT, KJ\r\n";
+			this->txtUPMiddleCALL->Text = L"88-22\r\nA9s-A7s\r\nKTs\r\nQJs-QTs\r\nJTs \r\nAT\r\nKJ\r\n";
 			// 
 			// label15
 			// 
@@ -462,7 +462,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->Location = System::Drawing::Point(150, 372);
+			this->label13->Location = System::Drawing::Point(150, 410);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(106, 16);
 			this->label13->TabIndex = 20;
@@ -495,7 +495,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(150, 266);
+			this->label10->Location = System::Drawing::Point(150, 300);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(47, 16);
 			this->label10->TabIndex = 17;
@@ -506,7 +506,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(156, 245);
+			this->label9->Location = System::Drawing::Point(156, 279);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(70, 16);
 			this->label9->TabIndex = 16;
@@ -610,7 +610,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPBigBlindRAISE
 			// 
 			this->txtUPBigBlindRAISE->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPBigBlindRAISE->Location = System::Drawing::Point(149, 284);
+			this->txtUPBigBlindRAISE->Location = System::Drawing::Point(149, 318);
 			this->txtUPBigBlindRAISE->Multiline = true;
 			this->txtUPBigBlindRAISE->Name = L"txtUPBigBlindRAISE";
 			this->txtUPBigBlindRAISE->Size = System::Drawing::Size(100, 77);
@@ -693,7 +693,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopTableTest->Location = System::Drawing::Point(4, 22);
 			this->tabPreFlopTableTest->Name = L"tabPreFlopTableTest";
 			this->tabPreFlopTableTest->Padding = System::Windows::Forms::Padding(3);
-			this->tabPreFlopTableTest->Size = System::Drawing::Size(785, 445);
+			this->tabPreFlopTableTest->Size = System::Drawing::Size(785, 465);
 			this->tabPreFlopTableTest->TabIndex = 0;
 			this->tabPreFlopTableTest->Text = L"Preflop Tables Test";
 			this->tabPreFlopTableTest->UseVisualStyleBackColor = true;
