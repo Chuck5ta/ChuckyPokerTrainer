@@ -131,6 +131,12 @@ private: System::Windows::Forms::Panel^  panel1;
 	private: System::Windows::Forms::TextBox^  textCorrectPlayAnswer;
 	private: System::Windows::Forms::Label^  lblPreFlopCorrectPlay;
 	private: System::Windows::Forms::Label^  label28;
+	private: System::Windows::Forms::Panel^  panel7;
+	private: System::Windows::Forms::Panel^  panel6;
+	private: System::Windows::Forms::Panel^  panel5;
+	private: System::Windows::Forms::Panel^  panel4;
+	private: System::Windows::Forms::Panel^  panel3;
+	private: System::Windows::Forms::Panel^  panel2;
 
 	private:
 		/// <summary>
@@ -209,6 +215,12 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->lblTitle = (gcnew System::Windows::Forms::Label());
 			this->btnExit = (gcnew System::Windows::Forms::Button());
 			this->label28 = (gcnew System::Windows::Forms::Label());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->panel4 = (gcnew System::Windows::Forms::Panel());
+			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->panel6 = (gcnew System::Windows::Forms::Panel());
+			this->panel7 = (gcnew System::Windows::Forms::Panel());
 			this->tabControl1->SuspendLayout();
 			this->tabPreFlopTables->SuspendLayout();
 			this->tabPreFlopTableTest->SuspendLayout();
@@ -224,11 +236,17 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabControl1->Location = System::Drawing::Point(56, 69);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(793, 491);
+			this->tabControl1->Size = System::Drawing::Size(1054, 491);
 			this->tabControl1->TabIndex = 0;
 			// 
 			// tabPreFlopTables
 			// 
+			this->tabPreFlopTables->Controls->Add(this->panel7);
+			this->tabPreFlopTables->Controls->Add(this->panel6);
+			this->tabPreFlopTables->Controls->Add(this->panel5);
+			this->tabPreFlopTables->Controls->Add(this->panel4);
+			this->tabPreFlopTables->Controls->Add(this->panel3);
+			this->tabPreFlopTables->Controls->Add(this->panel2);
 			this->tabPreFlopTables->Controls->Add(this->panel1);
 			this->tabPreFlopTables->Controls->Add(this->label25);
 			this->tabPreFlopTables->Controls->Add(this->txtRPBigBlindCALL);
@@ -270,7 +288,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopTables->Location = System::Drawing::Point(4, 22);
 			this->tabPreFlopTables->Name = L"tabPreFlopTables";
 			this->tabPreFlopTables->Padding = System::Windows::Forms::Padding(3);
-			this->tabPreFlopTables->Size = System::Drawing::Size(785, 465);
+			this->tabPreFlopTables->Size = System::Drawing::Size(1046, 465);
 			this->tabPreFlopTables->TabIndex = 1;
 			this->tabPreFlopTables->Text = L"PreFlop Tables";
 			this->tabPreFlopTables->UseVisualStyleBackColor = true;
@@ -278,7 +296,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::SlateBlue;
-			this->panel1->Location = System::Drawing::Point(396, 0);
+			this->panel1->Location = System::Drawing::Point(636, 0);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(5, 469);
 			this->panel1->TabIndex = 37;
@@ -288,7 +306,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label25->AutoSize = true;
 			this->label25->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label25->Location = System::Drawing::Point(550, 158);
+			this->label25->Location = System::Drawing::Point(805, 185);
 			this->label25->Name = L"label25";
 			this->label25->Size = System::Drawing::Size(34, 16);
 			this->label25->TabIndex = 36;
@@ -297,7 +315,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtRPBigBlindCALL
 			// 
 			this->txtRPBigBlindCALL->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtRPBigBlindCALL->Location = System::Drawing::Point(546, 175);
+			this->txtRPBigBlindCALL->Location = System::Drawing::Point(801, 202);
 			this->txtRPBigBlindCALL->Multiline = true;
 			this->txtRPBigBlindCALL->Name = L"txtRPBigBlindCALL";
 			this->txtRPBigBlindCALL->Size = System::Drawing::Size(100, 107);
@@ -309,7 +327,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label24->AutoSize = true;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label24->Location = System::Drawing::Point(670, 59);
+			this->label24->Location = System::Drawing::Point(926, 59);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(59, 16);
 			this->label24->TabIndex = 34;
@@ -320,7 +338,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label23->AutoSize = true;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label23->Location = System::Drawing::Point(550, 59);
+			this->label23->Location = System::Drawing::Point(805, 59);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(47, 16);
 			this->label23->TabIndex = 33;
@@ -331,7 +349,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label22->AutoSize = true;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label22->Location = System::Drawing::Point(426, 59);
+			this->label22->Location = System::Drawing::Point(681, 59);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(47, 16);
 			this->label22->TabIndex = 32;
@@ -342,7 +360,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label21->AutoSize = true;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label21->Location = System::Drawing::Point(664, 36);
+			this->label21->Location = System::Drawing::Point(920, 36);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(108, 16);
 			this->label21->TabIndex = 31;
@@ -353,7 +371,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label20->AutoSize = true;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->Location = System::Drawing::Point(559, 36);
+			this->label20->Location = System::Drawing::Point(814, 36);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(70, 16);
 			this->label20->TabIndex = 30;
@@ -364,7 +382,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label19->AutoSize = true;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label19->Location = System::Drawing::Point(426, 36);
+			this->label19->Location = System::Drawing::Point(681, 36);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(98, 16);
 			this->label19->TabIndex = 29;
@@ -375,7 +393,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label18->AutoSize = true;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label18->Location = System::Drawing::Point(276, 172);
+			this->label18->Location = System::Drawing::Point(276, 190);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(34, 16);
 			this->label18->TabIndex = 28;
@@ -384,7 +402,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPLateCALL
 			// 
 			this->txtUPLateCALL->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPLateCALL->Location = System::Drawing::Point(272, 190);
+			this->txtUPLateCALL->Location = System::Drawing::Point(272, 208);
 			this->txtUPLateCALL->Multiline = true;
 			this->txtUPLateCALL->Name = L"txtUPLateCALL";
 			this->txtUPLateCALL->Size = System::Drawing::Size(100, 92);
@@ -396,7 +414,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label17->AutoSize = true;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->Location = System::Drawing::Point(30, 365);
+			this->label17->Location = System::Drawing::Point(397, 190);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(34, 16);
 			this->label17->TabIndex = 26;
@@ -407,19 +425,19 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPSmallBlindCALL->BackColor = System::Drawing::SystemColors::InactiveCaption;
 			this->txtUPSmallBlindCALL->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->txtUPSmallBlindCALL->Location = System::Drawing::Point(26, 383);
+			this->txtUPSmallBlindCALL->Location = System::Drawing::Point(393, 208);
 			this->txtUPSmallBlindCALL->Multiline = true;
 			this->txtUPSmallBlindCALL->Name = L"txtUPSmallBlindCALL";
-			this->txtUPSmallBlindCALL->Size = System::Drawing::Size(100, 62);
+			this->txtUPSmallBlindCALL->Size = System::Drawing::Size(100, 117);
 			this->txtUPSmallBlindCALL->TabIndex = 25;
-			this->txtUPSmallBlindCALL->Text = L"88-22, A9s-A2s,\r\nKTs-K8s, QJs-Q8s,\r\nJTs-54s, J9s-T8s,\r\nAT, KJ\r\n";
+			this->txtUPSmallBlindCALL->Text = L"88-22\r\nA9s-A2s\r\nKTs-K8s \r\nQJs-Q8s\r\nJTs-54s \r\nJ9s-T8s\r\nAT\r\nKJ\r\n";
 			// 
 			// label16
 			// 
 			this->label16->AutoSize = true;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label16->Location = System::Drawing::Point(153, 156);
+			this->label16->Location = System::Drawing::Point(153, 189);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(31, 16);
 			this->label16->TabIndex = 24;
@@ -428,10 +446,10 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPMiddleCALL
 			// 
 			this->txtUPMiddleCALL->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPMiddleCALL->Location = System::Drawing::Point(149, 175);
+			this->txtUPMiddleCALL->Location = System::Drawing::Point(149, 208);
 			this->txtUPMiddleCALL->Multiline = true;
 			this->txtUPMiddleCALL->Name = L"txtUPMiddleCALL";
-			this->txtUPMiddleCALL->Size = System::Drawing::Size(100, 97);
+			this->txtUPMiddleCALL->Size = System::Drawing::Size(100, 106);
 			this->txtUPMiddleCALL->TabIndex = 23;
 			this->txtUPMiddleCALL->Text = L"88-22\r\nA9s-A7s\r\nKTs\r\nQJs-QTs\r\nJTs \r\nAT\r\nKJ\r\n";
 			// 
@@ -462,7 +480,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->Location = System::Drawing::Point(150, 410);
+			this->label13->Location = System::Drawing::Point(513, 207);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(106, 16);
 			this->label13->TabIndex = 20;
@@ -495,7 +513,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(150, 300);
+			this->label10->Location = System::Drawing::Point(513, 58);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(47, 16);
 			this->label10->TabIndex = 17;
@@ -506,7 +524,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(156, 279);
+			this->label9->Location = System::Drawing::Point(519, 37);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(70, 16);
 			this->label9->TabIndex = 16;
@@ -517,7 +535,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(28, 266);
+			this->label8->Location = System::Drawing::Point(395, 58);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(47, 16);
 			this->label8->TabIndex = 15;
@@ -528,7 +546,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(30, 245);
+			this->label7->Location = System::Drawing::Point(397, 37);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(86, 16);
 			this->label7->TabIndex = 14;
@@ -550,7 +568,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(30, 142);
+			this->label5->Location = System::Drawing::Point(30, 189);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(31, 16);
 			this->label5->TabIndex = 12;
@@ -559,10 +577,10 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPEarlyCALL
 			// 
 			this->txtUPEarlyCALL->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPEarlyCALL->Location = System::Drawing::Point(26, 161);
+			this->txtUPEarlyCALL->Location = System::Drawing::Point(26, 208);
 			this->txtUPEarlyCALL->Multiline = true;
 			this->txtUPEarlyCALL->Name = L"txtUPEarlyCALL";
-			this->txtUPEarlyCALL->Size = System::Drawing::Size(100, 76);
+			this->txtUPEarlyCALL->Size = System::Drawing::Size(100, 82);
 			this->txtUPEarlyCALL->TabIndex = 11;
 			this->txtUPEarlyCALL->Text = L"99-77\r\nKJs\r\nQJs\r\nAJ\r\nKQ";
 			// 
@@ -580,27 +598,27 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtRPAnyRAISE
 			// 
 			this->txtRPAnyRAISE->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtRPAnyRAISE->Location = System::Drawing::Point(667, 76);
+			this->txtRPAnyRAISE->Location = System::Drawing::Point(923, 76);
 			this->txtRPAnyRAISE->Multiline = true;
 			this->txtRPAnyRAISE->Name = L"txtRPAnyRAISE";
-			this->txtRPAnyRAISE->Size = System::Drawing::Size(100, 72);
+			this->txtRPAnyRAISE->Size = System::Drawing::Size(100, 39);
 			this->txtRPAnyRAISE->TabIndex = 9;
 			this->txtRPAnyRAISE->Text = L"AA-QQ\r\nAKs";
 			// 
 			// txtRPBigBlindRAISE
 			// 
 			this->txtRPBigBlindRAISE->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtRPBigBlindRAISE->Location = System::Drawing::Point(546, 76);
+			this->txtRPBigBlindRAISE->Location = System::Drawing::Point(801, 76);
 			this->txtRPBigBlindRAISE->Multiline = true;
 			this->txtRPBigBlindRAISE->Name = L"txtRPBigBlindRAISE";
-			this->txtRPBigBlindRAISE->Size = System::Drawing::Size(100, 72);
+			this->txtRPBigBlindRAISE->Size = System::Drawing::Size(100, 51);
 			this->txtRPBigBlindRAISE->TabIndex = 8;
 			this->txtRPBigBlindRAISE->Text = L"AA-JJ\r\nAKs-AQs\r\nAK";
 			// 
 			// txtRPNotBibBlindRAISE
 			// 
 			this->txtRPNotBibBlindRAISE->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtRPNotBibBlindRAISE->Location = System::Drawing::Point(425, 76);
+			this->txtRPNotBibBlindRAISE->Location = System::Drawing::Point(680, 76);
 			this->txtRPNotBibBlindRAISE->Multiline = true;
 			this->txtRPNotBibBlindRAISE->Name = L"txtRPNotBibBlindRAISE";
 			this->txtRPNotBibBlindRAISE->Size = System::Drawing::Size(100, 72);
@@ -610,7 +628,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPBigBlindRAISE
 			// 
 			this->txtUPBigBlindRAISE->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPBigBlindRAISE->Location = System::Drawing::Point(149, 318);
+			this->txtUPBigBlindRAISE->Location = System::Drawing::Point(512, 76);
 			this->txtUPBigBlindRAISE->Multiline = true;
 			this->txtUPBigBlindRAISE->Name = L"txtUPBigBlindRAISE";
 			this->txtUPBigBlindRAISE->Size = System::Drawing::Size(100, 77);
@@ -620,7 +638,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// txtUPSmallBlindRAISE
 			// 
 			this->txtUPSmallBlindRAISE->BackColor = System::Drawing::SystemColors::InactiveCaption;
-			this->txtUPSmallBlindRAISE->Location = System::Drawing::Point(26, 284);
+			this->txtUPSmallBlindRAISE->Location = System::Drawing::Point(393, 76);
 			this->txtUPSmallBlindRAISE->Multiline = true;
 			this->txtUPSmallBlindRAISE->Name = L"txtUPSmallBlindRAISE";
 			this->txtUPSmallBlindRAISE->Size = System::Drawing::Size(100, 77);
@@ -633,7 +651,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPLateRAISE->Location = System::Drawing::Point(272, 76);
 			this->txtUPLateRAISE->Multiline = true;
 			this->txtUPLateRAISE->Name = L"txtUPLateRAISE";
-			this->txtUPLateRAISE->Size = System::Drawing::Size(100, 88);
+			this->txtUPLateRAISE->Size = System::Drawing::Size(100, 95);
 			this->txtUPLateRAISE->TabIndex = 4;
 			this->txtUPLateRAISE->Text = L"AA-88\r\nAKs-A8s\r\nKQs-KTs\r\nQJs\r\nAK-AT\r\nKQ-KJ\r\n";
 			// 
@@ -643,7 +661,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPMiddleRAISE->Location = System::Drawing::Point(149, 76);
 			this->txtUPMiddleRAISE->Multiline = true;
 			this->txtUPMiddleRAISE->Name = L"txtUPMiddleRAISE";
-			this->txtUPMiddleRAISE->Size = System::Drawing::Size(100, 72);
+			this->txtUPMiddleRAISE->Size = System::Drawing::Size(100, 77);
 			this->txtUPMiddleRAISE->TabIndex = 3;
 			this->txtUPMiddleRAISE->Text = L"AA-99\r\nAKs-ATs\r\nKQs-KJs\r\nAK-AJ\r\nKQ";
 			// 
@@ -652,7 +670,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(532, 7);
+			this->label3->Location = System::Drawing::Point(789, 7);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(120, 24);
 			this->label3->TabIndex = 2;
@@ -663,7 +681,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(131, 7);
+			this->label2->Location = System::Drawing::Point(255, 7);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(139, 24);
 			this->label2->TabIndex = 1;
@@ -675,7 +693,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->txtUPEarlyRAISE->Location = System::Drawing::Point(26, 76);
 			this->txtUPEarlyRAISE->Multiline = true;
 			this->txtUPEarlyRAISE->Name = L"txtUPEarlyRAISE";
-			this->txtUPEarlyRAISE->Size = System::Drawing::Size(100, 62);
+			this->txtUPEarlyRAISE->Size = System::Drawing::Size(100, 72);
 			this->txtUPEarlyRAISE->TabIndex = 0;
 			this->txtUPEarlyRAISE->Text = L"AA-TT\r\nAKs-ATs\r\nKQs\r\nAK-AQ";
 			// 
@@ -693,7 +711,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopTableTest->Location = System::Drawing::Point(4, 22);
 			this->tabPreFlopTableTest->Name = L"tabPreFlopTableTest";
 			this->tabPreFlopTableTest->Padding = System::Windows::Forms::Padding(3);
-			this->tabPreFlopTableTest->Size = System::Drawing::Size(785, 465);
+			this->tabPreFlopTableTest->Size = System::Drawing::Size(1046, 465);
 			this->tabPreFlopTableTest->TabIndex = 0;
 			this->tabPreFlopTableTest->Text = L"Preflop Tables Test";
 			this->tabPreFlopTableTest->UseVisualStyleBackColor = true;
@@ -738,7 +756,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->lblResult->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->lblResult->ForeColor = System::Drawing::Color::DodgerBlue;
-			this->lblResult->Location = System::Drawing::Point(501, 170);
+			this->lblResult->Location = System::Drawing::Point(463, 199);
 			this->lblResult->Name = L"lblResult";
 			this->lblResult->Size = System::Drawing::Size(35, 37);
 			this->lblResult->TabIndex = 5;
@@ -809,7 +827,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopCorrectPlay->Location = System::Drawing::Point(4, 22);
 			this->tabPreFlopCorrectPlay->Name = L"tabPreFlopCorrectPlay";
 			this->tabPreFlopCorrectPlay->Padding = System::Windows::Forms::Padding(3);
-			this->tabPreFlopCorrectPlay->Size = System::Drawing::Size(785, 445);
+			this->tabPreFlopCorrectPlay->Size = System::Drawing::Size(1046, 465);
 			this->tabPreFlopCorrectPlay->TabIndex = 3;
 			this->tabPreFlopCorrectPlay->Text = L"PreFlop Correct Play";
 			this->tabPreFlopCorrectPlay->UseVisualStyleBackColor = true;
@@ -916,7 +934,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabIdentifyTheNuts->Location = System::Drawing::Point(4, 22);
 			this->tabIdentifyTheNuts->Name = L"tabIdentifyTheNuts";
 			this->tabIdentifyTheNuts->Padding = System::Windows::Forms::Padding(3);
-			this->tabIdentifyTheNuts->Size = System::Drawing::Size(785, 445);
+			this->tabIdentifyTheNuts->Size = System::Drawing::Size(1046, 465);
 			this->tabIdentifyTheNuts->TabIndex = 2;
 			this->tabIdentifyTheNuts->Text = L"Identify the Nuts";
 			this->tabIdentifyTheNuts->UseVisualStyleBackColor = true;
@@ -934,7 +952,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// btnExit
 			// 
-			this->btnExit->Location = System::Drawing::Point(420, 566);
+			this->btnExit->Location = System::Drawing::Point(530, 566);
 			this->btnExit->Name = L"btnExit";
 			this->btnExit->Size = System::Drawing::Size(75, 23);
 			this->btnExit->TabIndex = 2;
@@ -953,17 +971,78 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label28->TabIndex = 3;
 			this->label28->Text = L"ChuckE";
 			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel2->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel2->Location = System::Drawing::Point(136, 56);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(3, 400);
+			this->panel2->TabIndex = 38;
+			// 
+			// panel3
+			// 
+			this->panel3->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel3->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel3->Location = System::Drawing::Point(259, 56);
+			this->panel3->Name = L"panel3";
+			this->panel3->Size = System::Drawing::Size(3, 400);
+			this->panel3->TabIndex = 39;
+			// 
+			// panel4
+			// 
+			this->panel4->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel4->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel4->Location = System::Drawing::Point(380, 56);
+			this->panel4->Name = L"panel4";
+			this->panel4->Size = System::Drawing::Size(3, 400);
+			this->panel4->TabIndex = 40;
+			// 
+			// panel5
+			// 
+			this->panel5->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel5->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel5->Location = System::Drawing::Point(502, 56);
+			this->panel5->Name = L"panel5";
+			this->panel5->Size = System::Drawing::Size(3, 400);
+			this->panel5->TabIndex = 41;
+			// 
+			// panel6
+			// 
+			this->panel6->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel6->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel6->Location = System::Drawing::Point(789, 56);
+			this->panel6->Name = L"panel6";
+			this->panel6->Size = System::Drawing::Size(3, 400);
+			this->panel6->TabIndex = 42;
+			// 
+			// panel7
+			// 
+			this->panel7->BackColor = System::Drawing::Color::Gainsboro;
+			this->panel7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel7->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel7->Location = System::Drawing::Point(910, 56);
+			this->panel7->Name = L"panel7";
+			this->panel7->Size = System::Drawing::Size(3, 400);
+			this->panel7->TabIndex = 43;
+			// 
 			// ChuckyPokerTrainerGUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(904, 599);
+			this->ClientSize = System::Drawing::Size(1142, 599);
 			this->Controls->Add(this->label28);
 			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->btnExit);
 			this->Controls->Add(this->lblTitle);
 			this->Name = L"ChuckyPokerTrainerGUI";
 			this->Text = L"Chucky Poker Trainer";
+			this->Load += gcnew System::EventHandler(this, &ChuckyPokerTrainerGUI::ChuckyPokerTrainerGUI_Load);
 			this->tabControl1->ResumeLayout(false);
 			this->tabPreFlopTables->ResumeLayout(false);
 			this->tabPreFlopTables->PerformLayout();
@@ -1087,6 +1166,8 @@ private: System::Void btnCorrectPlayNextTest_Click(System::Object^  sender, Syst
 			 initialisePreFlopCorrectPlayTest();
 		 }
 
+private: System::Void ChuckyPokerTrainerGUI_Load(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }
 
