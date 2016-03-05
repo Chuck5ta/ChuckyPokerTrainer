@@ -747,11 +747,11 @@ private: System::Windows::Forms::Panel^  panel1;
 			// textPreflopCorrectAnswer
 			// 
 			this->textPreflopCorrectAnswer->BackColor = System::Drawing::SystemColors::GradientActiveCaption;
-			this->textPreflopCorrectAnswer->Location = System::Drawing::Point(307, 160);
+			this->textPreflopCorrectAnswer->Location = System::Drawing::Point(308, 200);
 			this->textPreflopCorrectAnswer->Multiline = true;
 			this->textPreflopCorrectAnswer->Name = L"textPreflopCorrectAnswer";
 			this->textPreflopCorrectAnswer->ReadOnly = true;
-			this->textPreflopCorrectAnswer->Size = System::Drawing::Size(142, 95);
+			this->textPreflopCorrectAnswer->Size = System::Drawing::Size(142, 38);
 			this->textPreflopCorrectAnswer->TabIndex = 4;
 			this->textPreflopCorrectAnswer->Text = L"Preflop Table Correct Answer";
 			// 
@@ -762,7 +762,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->textPreflopTable->Multiline = true;
 			this->textPreflopTable->Name = L"textPreflopTable";
 			this->textPreflopTable->ReadOnly = true;
-			this->textPreflopTable->Size = System::Drawing::Size(142, 94);
+			this->textPreflopTable->Size = System::Drawing::Size(142, 121);
 			this->textPreflopTable->TabIndex = 3;
 			this->textPreflopTable->Text = L"Preflop Table\r\nhello";
 			// 
