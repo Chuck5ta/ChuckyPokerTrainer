@@ -1,6 +1,7 @@
 #pragma once
 
 #include "PreFlopTables.h"
+#include "DisplayCards.h"
 //#include "PreFlopTable.h"
 #include <iostream>
 #include <string.h>
@@ -137,6 +138,12 @@ private: System::Windows::Forms::Panel^  panel1;
 	private: System::Windows::Forms::Panel^  panel4;
 	private: System::Windows::Forms::Panel^  panel3;
 	private: System::Windows::Forms::Panel^  panel2;
+private: System::Windows::Forms::PictureBox^  pbCard1;
+
+private: System::Windows::Forms::PictureBox^  pbCard2;
+
+
+
 
 	private:
 		/// <summary>
@@ -151,6 +158,7 @@ private: System::Windows::Forms::Panel^  panel1;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(ChuckyPokerTrainerGUI::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPreFlopTables = (gcnew System::Windows::Forms::TabPage());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
@@ -208,6 +216,8 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->lblPreflopTitle = (gcnew System::Windows::Forms::Label());
 			this->textAnswer = (gcnew System::Windows::Forms::TextBox());
 			this->tabPreFlopCorrectPlay = (gcnew System::Windows::Forms::TabPage());
+			this->pbCard2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pbCard1 = (gcnew System::Windows::Forms::PictureBox());
 			this->lblPreFlopCorrectPlay = (gcnew System::Windows::Forms::Label());
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->lblCorrectPlayHand = (gcnew System::Windows::Forms::Label());
@@ -225,6 +235,8 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopTables->SuspendLayout();
 			this->tabPreFlopTableTest->SuspendLayout();
 			this->tabPreFlopCorrectPlay->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -876,6 +888,8 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// tabPreFlopCorrectPlay
 			// 
+			this->tabPreFlopCorrectPlay->Controls->Add(this->pbCard2);
+			this->tabPreFlopCorrectPlay->Controls->Add(this->pbCard1);
 			this->tabPreFlopCorrectPlay->Controls->Add(this->lblPreFlopCorrectPlay);
 			this->tabPreFlopCorrectPlay->Controls->Add(this->label27);
 			this->tabPreFlopCorrectPlay->Controls->Add(this->lblCorrectPlayHand);
@@ -892,6 +906,24 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopCorrectPlay->TabIndex = 3;
 			this->tabPreFlopCorrectPlay->Text = L"PreFlop Correct Play";
 			this->tabPreFlopCorrectPlay->UseVisualStyleBackColor = true;
+			// 
+			// pbCard2
+			// 
+			this->pbCard2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbCard2.Image")));
+			this->pbCard2->Location = System::Drawing::Point(411, 146);
+			this->pbCard2->Name = L"pbCard2";
+			this->pbCard2->Size = System::Drawing::Size(99, 137);
+			this->pbCard2->TabIndex = 16;
+			this->pbCard2->TabStop = false;
+			// 
+			// pbCard1
+			// 
+			this->pbCard1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbCard1.Image")));
+			this->pbCard1->Location = System::Drawing::Point(306, 146);
+			this->pbCard1->Name = L"pbCard1";
+			this->pbCard1->Size = System::Drawing::Size(99, 137);
+			this->pbCard1->TabIndex = 15;
+			this->pbCard1->TabStop = false;
 			// 
 			// lblPreFlopCorrectPlay
 			// 
@@ -918,11 +950,11 @@ private: System::Windows::Forms::Panel^  panel1;
 			// lblCorrectPlayHand
 			// 
 			this->lblCorrectPlayHand->AutoSize = true;
-			this->lblCorrectPlayHand->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 72, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->lblCorrectPlayHand->Location = System::Drawing::Point(308, 125);
+			this->lblCorrectPlayHand->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->lblCorrectPlayHand->Location = System::Drawing::Point(372, 298);
 			this->lblCorrectPlayHand->Name = L"lblCorrectPlayHand";
-			this->lblCorrectPlayHand->Size = System::Drawing::Size(320, 108);
+			this->lblCorrectPlayHand->Size = System::Drawing::Size(96, 31);
 			this->lblCorrectPlayHand->TabIndex = 11;
 			this->lblCorrectPlayHand->Text = L"HAND";
 			// 
@@ -1051,6 +1083,8 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->tabPreFlopTableTest->PerformLayout();
 			this->tabPreFlopCorrectPlay->ResumeLayout(false);
 			this->tabPreFlopCorrectPlay->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -1094,12 +1128,28 @@ private: System::Windows::Forms::Panel^  panel1;
 				textCorrectPlayAnswer->Text = "";
 				lblCorrectPlaySeatingPosition->Text = "Seating Position";
 				lblCorrectPlayPotState->Text = "Pot State";
-				lblCorrectPlayHand->Text = "HAND";
 				 
 				// set up next test
 				struct ResultStruct result;
 				result = preFlopTables->getPreFlopHandDetails();
+
 				lblCorrectPlayHand->Text = gcnew String(result.table.c_str());
+
+				// get Preflop hand
+				std::string sCardNames = getCardImageNames(result.table);
+
+				lblCorrectPlayHand->Text = gcnew String(result.table.c_str());
+
+				// split the card names and display the cards
+				int divider = sCardNames.find("|");
+				std::string sFile1 = sCardNames.substr(0, 6);
+				std::string sFile2 = sCardNames.substr(divider+1, 6);
+				// change the cards
+				std::string sFileName = ".\\images\\" + sFile1;
+				pbCard1->Load(gcnew String(sFileName.c_str()));
+				sFileName = ".\\images\\" + sFile2;
+				pbCard2->Load(gcnew String(sFileName.c_str()));
+
 				lblCorrectPlayPotState->Text = gcnew String(result.potState.c_str());
 				lblCorrectPlaySeatingPosition->Text = gcnew String(result.seatingPosition.c_str());
 
@@ -1169,6 +1219,9 @@ private: System::Void textCorrectPlayAnswer_KeyDown(System::Object^  sender, Sys
 
 		private: System::Void ChuckyPokerTrainerGUI_Load(System::Object^  sender, System::EventArgs^  e) 
 		{
+			// make the card images fit the picture box control
+			pbCard1->SizeMode = PictureBoxSizeMode::Zoom;
+			pbCard2->SizeMode = PictureBoxSizeMode::Zoom;
 		}
 
 		private: System::Void tabControl1_Selected(System::Object^  sender, System::Windows::Forms::TabControlEventArgs^  e)
