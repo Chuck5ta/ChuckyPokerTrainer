@@ -141,6 +141,24 @@ private: System::Windows::Forms::Panel^  panel1;
 private: System::Windows::Forms::PictureBox^  pbCard1;
 
 private: System::Windows::Forms::PictureBox^  pbCard2;
+private: System::Windows::Forms::Button^  btnHighCard;
+private: System::Windows::Forms::Button^  btn1Pair;
+private: System::Windows::Forms::Button^  btn2Pair;
+private: System::Windows::Forms::Button^  btn3ofAKind;
+private: System::Windows::Forms::Button^  btnStraight;
+private: System::Windows::Forms::Button^  btnFlush;
+private: System::Windows::Forms::Button^  btnFullHouse;
+private: System::Windows::Forms::Button^  btnRoyalStraightFlush;
+private: System::Windows::Forms::Button^  btn4ofAKind;
+private: System::Windows::Forms::Button^  btnStraightFlush;
+private: System::Windows::Forms::Label^  label29;
+private: System::Windows::Forms::Label^  label30;
+private: System::Windows::Forms::PictureBox^  pbHoleCard2;
+private: System::Windows::Forms::PictureBox^  pbHoleCard1;
+private: System::Windows::Forms::PictureBox^  pbFlopCard3;
+private: System::Windows::Forms::PictureBox^  pbFlopCard2;
+private: System::Windows::Forms::PictureBox^  pbFlopCard1;
+private: System::Windows::Forms::Button^  btnIDTheNutsNextTest;
 
 
 
@@ -228,6 +246,24 @@ private: System::Windows::Forms::PictureBox^  pbCard2;
 			this->label26 = (gcnew System::Windows::Forms::Label());
 			this->textCorrectPlayAnswer = (gcnew System::Windows::Forms::TextBox());
 			this->tabIdentifyTheNuts = (gcnew System::Windows::Forms::TabPage());
+			this->btnHighCard = (gcnew System::Windows::Forms::Button());
+			this->btn1Pair = (gcnew System::Windows::Forms::Button());
+			this->btn2Pair = (gcnew System::Windows::Forms::Button());
+			this->btn3ofAKind = (gcnew System::Windows::Forms::Button());
+			this->btnStraight = (gcnew System::Windows::Forms::Button());
+			this->btnFlush = (gcnew System::Windows::Forms::Button());
+			this->btnFullHouse = (gcnew System::Windows::Forms::Button());
+			this->btnRoyalStraightFlush = (gcnew System::Windows::Forms::Button());
+			this->btn4ofAKind = (gcnew System::Windows::Forms::Button());
+			this->btnStraightFlush = (gcnew System::Windows::Forms::Button());
+			this->label29 = (gcnew System::Windows::Forms::Label());
+			this->label30 = (gcnew System::Windows::Forms::Label());
+			this->pbHoleCard2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pbHoleCard1 = (gcnew System::Windows::Forms::PictureBox());
+			this->pbFlopCard3 = (gcnew System::Windows::Forms::PictureBox());
+			this->pbFlopCard2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pbFlopCard1 = (gcnew System::Windows::Forms::PictureBox());
+			this->btnIDTheNutsNextTest = (gcnew System::Windows::Forms::Button());
 			this->lblTitle = (gcnew System::Windows::Forms::Label());
 			this->btnExit = (gcnew System::Windows::Forms::Button());
 			this->label28 = (gcnew System::Windows::Forms::Label());
@@ -237,6 +273,12 @@ private: System::Windows::Forms::PictureBox^  pbCard2;
 			this->tabPreFlopCorrectPlay->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard1))->BeginInit();
+			this->tabIdentifyTheNuts->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbHoleCard2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbHoleCard1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbFlopCard3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbFlopCard2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbFlopCard1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -1024,6 +1066,24 @@ private: System::Windows::Forms::PictureBox^  pbCard2;
 			// 
 			// tabIdentifyTheNuts
 			// 
+			this->tabIdentifyTheNuts->Controls->Add(this->btnHighCard);
+			this->tabIdentifyTheNuts->Controls->Add(this->btn1Pair);
+			this->tabIdentifyTheNuts->Controls->Add(this->btn2Pair);
+			this->tabIdentifyTheNuts->Controls->Add(this->btn3ofAKind);
+			this->tabIdentifyTheNuts->Controls->Add(this->btnStraight);
+			this->tabIdentifyTheNuts->Controls->Add(this->btnFlush);
+			this->tabIdentifyTheNuts->Controls->Add(this->btnFullHouse);
+			this->tabIdentifyTheNuts->Controls->Add(this->btnRoyalStraightFlush);
+			this->tabIdentifyTheNuts->Controls->Add(this->btn4ofAKind);
+			this->tabIdentifyTheNuts->Controls->Add(this->btnStraightFlush);
+			this->tabIdentifyTheNuts->Controls->Add(this->label29);
+			this->tabIdentifyTheNuts->Controls->Add(this->label30);
+			this->tabIdentifyTheNuts->Controls->Add(this->pbHoleCard2);
+			this->tabIdentifyTheNuts->Controls->Add(this->pbHoleCard1);
+			this->tabIdentifyTheNuts->Controls->Add(this->pbFlopCard3);
+			this->tabIdentifyTheNuts->Controls->Add(this->pbFlopCard2);
+			this->tabIdentifyTheNuts->Controls->Add(this->pbFlopCard1);
+			this->tabIdentifyTheNuts->Controls->Add(this->btnIDTheNutsNextTest);
 			this->tabIdentifyTheNuts->Location = System::Drawing::Point(4, 22);
 			this->tabIdentifyTheNuts->Name = L"tabIdentifyTheNuts";
 			this->tabIdentifyTheNuts->Padding = System::Windows::Forms::Padding(3);
@@ -1031,6 +1091,196 @@ private: System::Windows::Forms::PictureBox^  pbCard2;
 			this->tabIdentifyTheNuts->TabIndex = 2;
 			this->tabIdentifyTheNuts->Text = L"Identify the Nuts";
 			this->tabIdentifyTheNuts->UseVisualStyleBackColor = true;
+			// 
+			// btnHighCard
+			// 
+			this->btnHighCard->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnHighCard->Location = System::Drawing::Point(22, 411);
+			this->btnHighCard->Name = L"btnHighCard";
+			this->btnHighCard->Size = System::Drawing::Size(133, 29);
+			this->btnHighCard->TabIndex = 34;
+			this->btnHighCard->Text = L"High Card";
+			this->btnHighCard->UseVisualStyleBackColor = true;
+			// 
+			// btn1Pair
+			// 
+			this->btn1Pair->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btn1Pair->Location = System::Drawing::Point(22, 376);
+			this->btn1Pair->Name = L"btn1Pair";
+			this->btn1Pair->Size = System::Drawing::Size(133, 29);
+			this->btn1Pair->TabIndex = 33;
+			this->btn1Pair->Text = L"1 Pair";
+			this->btn1Pair->UseVisualStyleBackColor = true;
+			// 
+			// btn2Pair
+			// 
+			this->btn2Pair->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btn2Pair->Location = System::Drawing::Point(22, 341);
+			this->btn2Pair->Name = L"btn2Pair";
+			this->btn2Pair->Size = System::Drawing::Size(133, 29);
+			this->btn2Pair->TabIndex = 32;
+			this->btn2Pair->Text = L"2 pair";
+			this->btn2Pair->UseVisualStyleBackColor = true;
+			// 
+			// btn3ofAKind
+			// 
+			this->btn3ofAKind->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btn3ofAKind->Location = System::Drawing::Point(22, 306);
+			this->btn3ofAKind->Name = L"btn3ofAKind";
+			this->btn3ofAKind->Size = System::Drawing::Size(133, 29);
+			this->btn3ofAKind->TabIndex = 31;
+			this->btn3ofAKind->Text = L"3 of a kind";
+			this->btn3ofAKind->UseVisualStyleBackColor = true;
+			// 
+			// btnStraight
+			// 
+			this->btnStraight->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnStraight->Location = System::Drawing::Point(22, 271);
+			this->btnStraight->Name = L"btnStraight";
+			this->btnStraight->Size = System::Drawing::Size(133, 29);
+			this->btnStraight->TabIndex = 30;
+			this->btnStraight->Text = L"Straight";
+			this->btnStraight->UseVisualStyleBackColor = true;
+			// 
+			// btnFlush
+			// 
+			this->btnFlush->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnFlush->Location = System::Drawing::Point(22, 236);
+			this->btnFlush->Name = L"btnFlush";
+			this->btnFlush->Size = System::Drawing::Size(133, 29);
+			this->btnFlush->TabIndex = 29;
+			this->btnFlush->Text = L"Flush";
+			this->btnFlush->UseVisualStyleBackColor = true;
+			// 
+			// btnFullHouse
+			// 
+			this->btnFullHouse->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnFullHouse->Location = System::Drawing::Point(22, 201);
+			this->btnFullHouse->Name = L"btnFullHouse";
+			this->btnFullHouse->Size = System::Drawing::Size(133, 29);
+			this->btnFullHouse->TabIndex = 28;
+			this->btnFullHouse->Text = L"Full House";
+			this->btnFullHouse->UseVisualStyleBackColor = true;
+			// 
+			// btnRoyalStraightFlush
+			// 
+			this->btnRoyalStraightFlush->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->btnRoyalStraightFlush->Location = System::Drawing::Point(22, 90);
+			this->btnRoyalStraightFlush->Name = L"btnRoyalStraightFlush";
+			this->btnRoyalStraightFlush->Size = System::Drawing::Size(167, 34);
+			this->btnRoyalStraightFlush->TabIndex = 27;
+			this->btnRoyalStraightFlush->Text = L"Royal Straight Flush";
+			this->btnRoyalStraightFlush->UseVisualStyleBackColor = true;
+			// 
+			// btn4ofAKind
+			// 
+			this->btn4ofAKind->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btn4ofAKind->Location = System::Drawing::Point(22, 165);
+			this->btn4ofAKind->Name = L"btn4ofAKind";
+			this->btn4ofAKind->Size = System::Drawing::Size(133, 29);
+			this->btn4ofAKind->TabIndex = 26;
+			this->btn4ofAKind->Text = L"4 of a kind";
+			this->btn4ofAKind->UseVisualStyleBackColor = true;
+			// 
+			// btnStraightFlush
+			// 
+			this->btnStraightFlush->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnStraightFlush->Location = System::Drawing::Point(22, 130);
+			this->btnStraightFlush->Name = L"btnStraightFlush";
+			this->btnStraightFlush->Size = System::Drawing::Size(133, 29);
+			this->btnStraightFlush->TabIndex = 25;
+			this->btnStraightFlush->Text = L"Straight Flush";
+			this->btnStraightFlush->UseVisualStyleBackColor = true;
+			// 
+			// label29
+			// 
+			this->label29->AutoSize = true;
+			this->label29->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label29->ForeColor = System::Drawing::Color::DodgerBlue;
+			this->label29->Location = System::Drawing::Point(356, 401);
+			this->label29->Name = L"label29";
+			this->label29->Size = System::Drawing::Size(35, 37);
+			this->label29->TabIndex = 24;
+			this->label29->Text = L"\?";
+			// 
+			// label30
+			// 
+			this->label30->AutoSize = true;
+			this->label30->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label30->Location = System::Drawing::Point(17, 53);
+			this->label30->Name = L"label30";
+			this->label30->Size = System::Drawing::Size(172, 25);
+			this->label30->TabIndex = 23;
+			this->label30->Text = L"What\'s the nuts\?";
+			// 
+			// pbHoleCard2
+			// 
+			this->pbHoleCard2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbHoleCard2.Image")));
+			this->pbHoleCard2->Location = System::Drawing::Point(413, 244);
+			this->pbHoleCard2->Name = L"pbHoleCard2";
+			this->pbHoleCard2->Size = System::Drawing::Size(99, 137);
+			this->pbHoleCard2->TabIndex = 21;
+			this->pbHoleCard2->TabStop = false;
+			// 
+			// pbHoleCard1
+			// 
+			this->pbHoleCard1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbHoleCard1.Image")));
+			this->pbHoleCard1->Location = System::Drawing::Point(308, 244);
+			this->pbHoleCard1->Name = L"pbHoleCard1";
+			this->pbHoleCard1->Size = System::Drawing::Size(99, 137);
+			this->pbHoleCard1->TabIndex = 20;
+			this->pbHoleCard1->TabStop = false;
+			// 
+			// pbFlopCard3
+			// 
+			this->pbFlopCard3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbFlopCard3.Image")));
+			this->pbFlopCard3->Location = System::Drawing::Point(468, 70);
+			this->pbFlopCard3->Name = L"pbFlopCard3";
+			this->pbFlopCard3->Size = System::Drawing::Size(99, 137);
+			this->pbFlopCard3->TabIndex = 19;
+			this->pbFlopCard3->TabStop = false;
+			// 
+			// pbFlopCard2
+			// 
+			this->pbFlopCard2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbFlopCard2.Image")));
+			this->pbFlopCard2->Location = System::Drawing::Point(363, 70);
+			this->pbFlopCard2->Name = L"pbFlopCard2";
+			this->pbFlopCard2->Size = System::Drawing::Size(99, 137);
+			this->pbFlopCard2->TabIndex = 18;
+			this->pbFlopCard2->TabStop = false;
+			// 
+			// pbFlopCard1
+			// 
+			this->pbFlopCard1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pbFlopCard1.Image")));
+			this->pbFlopCard1->Location = System::Drawing::Point(258, 70);
+			this->pbFlopCard1->Name = L"pbFlopCard1";
+			this->pbFlopCard1->Size = System::Drawing::Size(99, 137);
+			this->pbFlopCard1->TabIndex = 17;
+			this->pbFlopCard1->TabStop = false;
+			// 
+			// btnIDTheNutsNextTest
+			// 
+			this->btnIDTheNutsNextTest->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 14.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->btnIDTheNutsNextTest->Location = System::Drawing::Point(195, 387);
+			this->btnIDTheNutsNextTest->Name = L"btnIDTheNutsNextTest";
+			this->btnIDTheNutsNextTest->Size = System::Drawing::Size(75, 69);
+			this->btnIDTheNutsNextTest->TabIndex = 10;
+			this->btnIDTheNutsNextTest->Text = L"Next Test";
+			this->btnIDTheNutsNextTest->UseVisualStyleBackColor = true;
+			this->btnIDTheNutsNextTest->Click += gcnew System::EventHandler(this, &ChuckyPokerTrainerGUI::btnIDTheNutsNextTest_Click);
 			// 
 			// lblTitle
 			// 
@@ -1085,131 +1335,148 @@ private: System::Windows::Forms::PictureBox^  pbCard2;
 			this->tabPreFlopCorrectPlay->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbCard1))->EndInit();
+			this->tabIdentifyTheNuts->ResumeLayout(false);
+			this->tabIdentifyTheNuts->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbHoleCard2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbHoleCard1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbFlopCard3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbFlopCard2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pbFlopCard1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 		
-	private: System::Void initialisePreFlopTableTest()
-			 {
-				// *** PREFLOP TABLES ***
-				// ======================
-				// LOAD UP THE PREFLOP TABLES
-				PreFlopTables * preFlopTables = new PreFlopTables();
-				// clear current settings
-				lblResult->Text = "?";
-				textAnswer->Text = "";
-				textPreflopCorrectAnswer->Text = "";
-				textPreflopTable->Text = "";
-				lblPotState->Text = "";
-				lblSeatingPosition->Text = "";
-				// set up next test
-				struct ResultStruct result;
-				result = preFlopTables->getTestTable();
-				textPreflopTable->Text = gcnew String(result.table.c_str());
-				lblPotState->Text = gcnew String(result.potState.c_str());
-				lblSeatingPosition->Text = gcnew String(result.seatingPosition.c_str());
+		private: System::Void initialisePreFlopTableTest()
+		{
+			// *** PREFLOP TABLES ***
+			// ======================
+			// LOAD UP THE PREFLOP TABLES
+			PreFlopTables * preFlopTables = new PreFlopTables();
+			// clear current settings
+			lblResult->Text = "?";
+			textAnswer->Text = "";
+			textPreflopCorrectAnswer->Text = "";
+			textPreflopTable->Text = "";
+			lblPotState->Text = "";
+			lblSeatingPosition->Text = "";
+			// set up next test
+			struct ResultStruct result;
+			result = preFlopTables->getTestTable();
+			textPreflopTable->Text = gcnew String(result.table.c_str());
+			lblPotState->Text = gcnew String(result.potState.c_str());
+			lblSeatingPosition->Text = gcnew String(result.seatingPosition.c_str());
 
-				// send the missing line to the judge
-				judge.setTheAnswer(result.missingLine);
-			 }
+			// send the missing line to the judge
+			judge.setTheAnswer(result.missingLine);
+		}
 		
-	private: System::Void initialisePreFlopCorrectPlayTest()
-			 {
-				// *** PREFLOP TABLES ***
-				// ======================
-				// LOAD UP THE PREFLOP TABLES
-				PreFlopTables * preFlopTables = new PreFlopTables();
+		private: System::Void initialisePreFlopCorrectPlayTest()
+		{
+			// *** PREFLOP TABLES ***
+			// ======================
+			// LOAD UP THE PREFLOP TABLES
+			PreFlopTables * preFlopTables = new PreFlopTables();
 
 				
-				// clear current settings
-				lblCorrectPlayResult->Text = "?";
-				textCorrectPlayAnswer->Text = "";
-				lblCorrectPlaySeatingPosition->Text = "Seating Position";
-				lblCorrectPlayPotState->Text = "Pot State";
+			// clear current settings
+			lblCorrectPlayResult->Text = "?";
+			textCorrectPlayAnswer->Text = "";
+			lblCorrectPlaySeatingPosition->Text = "Seating Position";
+			lblCorrectPlayPotState->Text = "Pot State";
 				 
-				// set up next test
-				struct ResultStruct result;
-				result = preFlopTables->getPreFlopHandDetails();
+			// set up next test
+			struct ResultStruct result;
+			result = preFlopTables->getPreFlopHandDetails();
 
-				lblCorrectPlayHand->Text = gcnew String(result.table.c_str());
+			lblCorrectPlayHand->Text = gcnew String(result.table.c_str());
 
-				// get Preflop hand
-				std::string sCardNames = getCardImageNames(result.table);
+			// get Preflop hand
+			std::string sCardNames = getCardImageNames(result.table);
 
-				lblCorrectPlayHand->Text = gcnew String(result.table.c_str());
+			lblCorrectPlayHand->Text = gcnew String(result.table.c_str());
 
-				// split the card names and display the cards
-				int divider = sCardNames.find("|");
-				std::string sFile1 = sCardNames.substr(0, 6);
-				std::string sFile2 = sCardNames.substr(divider+1, 6);
-				// change the cards
-				std::string sFileName = ".\\images\\" + sFile1;
-				pbCard1->Load(gcnew String(sFileName.c_str()));
-				sFileName = ".\\images\\" + sFile2;
-				pbCard2->Load(gcnew String(sFileName.c_str()));
+			// split the card names and display the cards
+			int divider = sCardNames.find("|");
+			std::string sFile1 = sCardNames.substr(0, 6);
+			std::string sFile2 = sCardNames.substr(divider+1, 6);
+			// change the cards
+			std::string sFileName = ".\\images\\" + sFile1;
+			pbCard1->Load(gcnew String(sFileName.c_str()));
+			sFileName = ".\\images\\" + sFile2;
+			pbCard2->Load(gcnew String(sFileName.c_str()));
 
-				lblCorrectPlayPotState->Text = gcnew String(result.potState.c_str());
-				lblCorrectPlaySeatingPosition->Text = gcnew String(result.seatingPosition.c_str());
+			lblCorrectPlayPotState->Text = gcnew String(result.potState.c_str());
+			lblCorrectPlaySeatingPosition->Text = gcnew String(result.seatingPosition.c_str());
 
-				// send the missing line to the judge
-				judge.setPreFlopCorrectPlayAnswer(result.correctPlay);
-			 }
+			// send the missing line to the judge
+			judge.setPreFlopCorrectPlayAnswer(result.correctPlay);
+		}																																																		
 
-	private: System::Void initialiseSystem()
-			 {
-				 initialisePreFlopTableTest();
-				 initialisePreFlopCorrectPlayTest();
-			 }
+		private: System::Void initialiseIdentifyTheNutsTest()
+		{
 
-	private: System::Void btnNextTest_Click(System::Object^  sender, System::EventArgs^  e) 
-			{				
-				initialisePreFlopTableTest();
+		}
+
+		private: System::Void initialiseSystem()
+		{
+			// PreFlop Tables Test
+			initialisePreFlopTableTest();
+			// PreFlop Correct Play
+			initialisePreFlopCorrectPlayTest();
+			// Identify the Nuts
+			initialiseIdentifyTheNutsTest();
+
+		}
+
+		private: System::Void btnNextTest_Click(System::Object^  sender, System::EventArgs^  e) 
+		{				
+			initialisePreFlopTableTest();
+		}
+
+		private: System::Void btnExit_Click(System::Object^  sender, System::EventArgs^  e) 
+		{
+			Application::Exit();
+		}
+
+		private: System::Void textAnswer_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) 
+		{
+			// was the ENTER key pressed?
+			if (e->KeyCode == Keys::Enter )
+			{					 
+				// output the correct answer
+				std::string correctAnswer = judge.getTheAnswer();
+				// display the correct answer
+				textPreflopCorrectAnswer->Text = gcnew String(correctAnswer.c_str());
+				// time for the judge to decide if the user's answer is correct
+				if (judge.checkPlayerAnswer(marshal_as<std::string>(textAnswer->Text), correctAnswer) == true)
+				{
+					lblResult->Text = "CORRECT";
+				}
+				else
+					lblResult->Text = "WRONG";
 			}
+		}
 
-	private: System::Void btnExit_Click(System::Object^  sender, System::EventArgs^  e) 
+		private: System::Void textCorrectPlayAnswer_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) 
+		{
+			// was the ENTER key pressed?
+			if (e->KeyCode == Keys::Enter )
 			{
-				Application::Exit();
+				// output the correct answer
+				std::string correctAnswer = judge.getPreFlopCorrectPlayAnswer();
+				// display the correct answer
+				lblPreFlopCorrectPlay->Text = gcnew String(correctAnswer.c_str());
+				// time for the judge to decide if the user's answer is correct
+				if (judge.checkPlayerAnswer(marshal_as<std::string>(textCorrectPlayAnswer->Text), correctAnswer) == true)
+				{
+					lblCorrectPlayResult->Text = "CORRECT";
+				}
+				else
+					lblCorrectPlayResult->Text = "WRONG";
 			}
-
-private: System::Void textAnswer_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) 
-		 {
-			 // was the ENTER key pressed?
-			 if (e->KeyCode == Keys::Enter )
-			 {					 
-				 // output the correct answer
-				 std::string correctAnswer = judge.getTheAnswer();
-				 // display the correct answer
-				 textPreflopCorrectAnswer->Text = gcnew String(correctAnswer.c_str());
-				 // time for the judge to decide if the user's answer is correct
-				 if (judge.checkPlayerAnswer(marshal_as<std::string>(textAnswer->Text), correctAnswer) == true)
-				 {
-					 lblResult->Text = "CORRECT";
-				 }
-				 else
-					 lblResult->Text = "WRONG";
-			 }
-		 }
-
-private: System::Void textCorrectPlayAnswer_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) 
-		 {
-			 // was the ENTER key pressed?
-			 if (e->KeyCode == Keys::Enter )
-			 {
-				 // output the correct answer
-				 std::string correctAnswer = judge.getPreFlopCorrectPlayAnswer();
-				 // display the correct answer
-				 lblPreFlopCorrectPlay->Text = gcnew String(correctAnswer.c_str());
-				 // time for the judge to decide if the user's answer is correct
-				 if (judge.checkPlayerAnswer(marshal_as<std::string>(textCorrectPlayAnswer->Text), correctAnswer) == true)
-				 {
-					 lblCorrectPlayResult->Text = "CORRECT";
-				 }
-				 else
-					 lblCorrectPlayResult->Text = "WRONG";
-			 }
-		 }
+		}
 
 		 // PreFlop Correct Play Next Text button
 		private: System::Void btnCorrectPlayNextTest_Click(System::Object^  sender, System::EventArgs^  e) 
@@ -1246,6 +1513,11 @@ private: System::Void textCorrectPlayAnswer_KeyDown(System::Object^  sender, Sys
 				lblTitle->Location = Point(264, 16);
 				btnExit->Location = Point(371, 566);
 			}
+		}
+
+		private: System::Void btnIDTheNutsNextTest_Click(System::Object^  sender, System::EventArgs^  e) 
+		{
+			initialiseIdentifyTheNutsTest();
 		}
 
 };
